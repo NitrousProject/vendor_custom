@@ -16,6 +16,11 @@
 PRODUCT_COPY_FILES += \
     vendor/custom/prebuilt/bin/sysinit:system/bin/sysinit
 
+# init file
+PRODUCT_COPY_FILES += \
+    vendor/custom/superuser/su:root/sbin/su \
+    vendor/custom/superuser/init.superuser.rc:root/init.superuser.rc
+
 # Pure-specific init file
 PRODUCT_COPY_FILES += \
     vendor/custom/prebuilt/etc/init.custom.rc:root/init.custom.rc
